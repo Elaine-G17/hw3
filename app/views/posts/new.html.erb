@@ -12,11 +12,6 @@
     <%= form.label "description" %>
     <%= form.text_field "description" %>
   </p>
-  <p>
-    <%= form.label "location" %>
-    <%= form.collection_select "place_id", Place.all, "id", "name" %>
-  </p>
-  <p>
+    <%= form.hidden_field "place_id" %>
   <%= form.submit %>
-  </p>
 <% end %>
